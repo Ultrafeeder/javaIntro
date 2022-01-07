@@ -7,14 +7,22 @@ console.log(`The difference between ${num1} and ${num2} is ${num1 - num2}`);
 
 //EASY
 
-var name1 = "Ewing";
+var name1 = "Ike";
 
 var name2 = "Muzzio";
 
-nameLength1 = name1.length;
-nameLength2 = name2.length;
+var nameLength1 = name1.length;
+var nameLength2 = name2.length;
 
-console.log("The name " + name1 + " is shorter than " + name2 + ` by ${nameLength2 - nameLength1} character.`)
+
+if (nameLength1 > nameLength2) {
+        var comparison = "longer"
+}
+else if (nameLength1 < nameLength2) {
+    var comparison = "shorter"
+    }
+
+console.log("The name " + name1 + " is " + comparison + " than " + name2 + ` by ${nameLength1 - nameLength2} character(s).`)
 
 //MEDIUM
 function mediumFunction() {
@@ -60,16 +68,19 @@ function calculator() {
     var num1 = document.getElementById('num1').value;
     var num2 = document.getElementById('num2').value;
     var op = document.getElementById('operation').value;
-        if (op === "+") { 
-            document.getElementById('outcome').innerHTML = parseInt(num1) + parseInt(num2);
+       if (op === "+") { 
+            document.getElementById('outcome').innerHTML = (num1) + (num2);
      }
-     if (op === "-") {
-            document.getElementById('outcome').innerHTML = parseInt(num1) - parseInt(num2)
+        else if (op === "-") {
+            document.getElementById('outcome').innerHTML = (num1) - (num2)
      }
-     if (op === "*") {
-         document.getElementById('outcome').innerHTML = parseInt(num1) * parseInt(num2)
+        else if (op === "*") {
+         document.getElementById('outcome').innerHTML = (num1) * (num2)
      }
-     if (op === "/") {
-         document.getElementById('outcome').innerHTML = parseInt(num1) / parseInt(num2)
+        else if (op === "/") {
+         document.getElementById('outcome').innerHTML = (num1) / (num2)
      }
+        else {
+            document.getElementById('outcome').innerHTML = "Please enter valid operator!"
+    }
  }
