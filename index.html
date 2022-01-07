@@ -8,6 +8,43 @@
 </head>
 <body>
     <h1>Open the console!</h1>
+    <button id="shouting" onclick="mediumFunction()">Medium difficulty</button>
+   <section>
+       <h2>add</h2>
+       <input type="number" id="add1">
+       <input type="number" id="add2">
+       <button onclick="add()">Sum</button>
+       <p id="sum"></p>
+   </section>
+   <section>
+    <h2>subtract</h2>
+    <input type="number" id="sub1">
+    <input type="number" id="sub2">
+    <button onclick="subtract()">Difference</button>
+    <p id="dif"></p>
+</section>
+<section>
+    <h2>multiply</h2>
+    <input type="number" id="mult1">
+    <input type="number" id="mult2">
+    <button onclick="multiply()">Product</button>
+    <p id="pro"></p>
+</section>
+<section>
+    <h2>divide</h2>
+    <input type="number" id="div1">
+    <input type="number" id="div2">
+    <button onclick="divide()">Quotient</button>
+    <p id="quo"></p>
+</section>
+<section>
+    <h2>calculator</h2>
+    <input type="number" placeholder="12345" id="num1">
+    <input type="text" placeholder="+ - * /" id="operation">
+    <input type="number" placeholder="12345" id="num2">
+    <button onclick="calculator()">outcome</button>
+    <p id="outcome"></p>
+</section>
     <script src="script.js"></script>
 </body>
 </html>
