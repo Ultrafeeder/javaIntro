@@ -98,16 +98,16 @@ function calcPrompt() {
     var promptOp = prompt("+ - * /");
     var promptNum2 = Number(prompt("Second number"));
         if (promptOp === "+") {
-         console.log("Sum = " + (`${promptNum1 + promptNum2}`));
+         console.log(promptNum1 + "+" + promptNum2 + "=" + (`${promptNum1 + promptNum2}`));
         }
         else if (promptOp === "-") {
-            console.log("Difference = " + (`${promptNum1 - promptNum2}`));
+            console.log(promptNum1 + "-" + promptNum2 + "=" + (`${promptNum1 - promptNum2}`));
         }
         else if (promptOp === "*") {
-            console.log("Product = " + (`${promptNum1 * promptNum2}`));
+            console.log(promptNum1 + "*" + promptNum2 + "=" + (`${promptNum1 * promptNum2}`));
         }
         else if (promptOp === "/") {
-            console.log("Quotient = " + (`${promptNum1 / promptNum2}`));
+            console.log(promptNum1 + "/" + promptNum2 + "=" + (`${promptNum1 / promptNum2}`));
         }
         else {
             alert("Please use Valid Operater!")
