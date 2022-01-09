@@ -7,7 +7,7 @@ console.log(`The difference between ${num1} and ${num2} is ${num1 - num2}`);
 
 //EASY
 
-var name1 = "Ike";
+var name1 = "Konstnar";
 
 var name2 = "Muzzio";
 
@@ -20,9 +20,15 @@ if (nameLength1 > nameLength2) {
 }
 else if (nameLength1 < nameLength2) {
     var comparison = "shorter"
-    }
+}
+if (comparison === "longer") {
+    var difference = nameLength1 - nameLength2
+}
+else if (comparison == "shorter") {
+    var difference = nameLength2 - nameLength1
+}
 
-console.log("The name " + name1 + " is " + comparison + " than " + name2 + ` by ${nameLength1 - nameLength2} character(s).`)
+console.log("The name " + name1 + " is " + comparison + " than " + name2 + " by " + difference + " character(s).")
 
 //MEDIUM
 function mediumFunction() {
@@ -83,4 +89,27 @@ function calculator() {
         else {
             document.getElementById('outcome').innerHTML = "Please enter valid operator!"
     }
- }
+}
+ 
+//VERY HARD (PROMPT)
+
+function calcPrompt() {
+    var promptNum1 = Number(prompt("First Number"));
+    var promptOp = prompt("+ - * /");
+    var promptNum2 = Number(prompt("Second number"));
+        if (promptOp === "+") {
+         console.log("Sum = " + (`${promptNum1 + promptNum2}`));
+        }
+        else if (promptOp === "-") {
+            console.log("Difference = " + (`${promptNum1 - promptNum2}`));
+        }
+        else if (promptOp === "*") {
+            console.log("Product = " + (`${promptNum1 * promptNum2}`));
+        }
+        else if (promptOp === "/") {
+            console.log("Quotient = " + (`${promptNum1 / promptNum2}`));
+        }
+        else {
+            alert("Please use Valid Operater!")
+    }
+}
